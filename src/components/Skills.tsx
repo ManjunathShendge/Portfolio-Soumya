@@ -1,8 +1,8 @@
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 
 const Skills = () => {
-  const [isVisible, setIsVisible] = useState(false);
+  const [,setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
 
   const skills = [
