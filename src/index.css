@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Prevent accidental horizontal overflow which can create a right-side gap */
+html, body, #root {
+	overflow-x: hidden;
+}
+
+/* Utility: ensure images and videos can't overflow their containers */
+img, video {
+	max-width: 100%;
+	height: auto;
+}
