@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, MapPin, Phone, Send, Github, Linkedin, MessageCircle} from 'lucide-react';
+import { Mail, MapPin, Phone, Send, Github, Linkedin} from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -45,9 +45,9 @@ const Contact = () => {
   ];
 
   const socialLinks = [
-    { icon: Github, href: '#', label: 'GitHub' },
+    { icon: Github, href: 'https://github.com/SoumyaMirajakar', label: 'GitHub' },
     { icon: Linkedin, href: 'https://www.linkedin.com/in/soumya-mirajakar-259525341/', label: 'LinkedIn' },
-    { icon: MessageCircle, href: '#', label: 'Whatsapp' }
+    {icon: Mail, href: "mailto:mirajakarsoumya@gmail.com", label: "Email"}
 
   ];
 

@@ -62,9 +62,8 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.7 }}
           >
-            As an AI/ML enthusiast I love blending
-            technology and creativity to build systems that think, learn, and
-            make life smarter for everyone.
+            As an AI/ML enthusiast I love blending technology and creativity to
+            build systems that think, learn, and make life smarter for everyone.
           </motion.p>
         </motion.div>
 
@@ -76,9 +75,21 @@ const Hero = () => {
           transition={{ duration: 0.6, delay: 0.9 }}
         >
           {[
-            { icon: Github, href: "#", label: "GitHub" },
-            { icon: Linkedin, href: "#", label: "LinkedIn" },
-            { icon: Mail, href: "#contact", label: "Email" },
+            {
+              icon: Github,
+              href: "https://github.com/SoumyaMirajakar",
+              label: "GitHub",
+            },
+            {
+              icon: Linkedin,
+              href: "https://www.linkedin.com/in/soumya-mirajakar-259525341/",
+              label: "LinkedIn",
+            },
+            {
+              icon: Mail,
+              href: "mailto:mirajakarsoumya@gmail.com",
+              label: "Email",
+            },
           ].map(({ icon: Icon, href, label }, index) => (
             <motion.a
               key={label}
@@ -107,6 +118,10 @@ const Hero = () => {
             boxShadow: "0 20px 40px rgba(168, 85, 247, 0.3)",
           }}
           whileTap={{ scale: 0.95 }}
+          onClick={() => {
+            const section = document.getElementById("featured-projects"); // replace with your target section ID
+            section?.scrollIntoView({ behavior: "smooth" });
+          }}
         >
           View My Work
         </motion.button>
