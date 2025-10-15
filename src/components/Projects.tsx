@@ -1,15 +1,27 @@
 import { motion } from "framer-motion";
 import { ExternalLink, Github, ArrowRight } from "lucide-react";
+import multilingualImg from "../assets/Images/Multilingual-translation.png";
+import garbagecollection from "../assets/Images/Garbage-Classification-system.png";
+import travelmanagement from "../assets/Images/Travel-management-app.png";
+import vulnarability from "../assets/Images/Vulnerability-extraction-and-visualizationtool.png";
+import securebooting from "../assets/Images/Secure-computer-booting.png";
 
 const Projects = () => {
   const projects = [
     {
       title: "Multimodal Multilingual Translation System",
+
       description:
         "This research presents a multimodal multilingual translation system supporting over 200 languages with text, audio, and visual outputs. It integrates advanced AI models like NLLB-200, Whisper, Google TTS, and Stable Diffusion XL for real-time, optimized performance and accessibility.The system achieved high translation accuracy and user-friendly interaction, marking a significant step in AI-driven communication and human-computer interaction.",
-      image: "/Images/Multilingual-translation.png",
-      tech: ["Natural Language Processing (NLP)", "Generative AI", "Software Development", "Computer Vision"],
-      github: "https://docs.google.com/document/d/1ezYkO2tcCpq0pj3hMai1zKku-me95obQ/edit?usp=sharing&ouid=115244006927528207392&rtpof=true&sd=true",
+      image: multilingualImg,
+      tech: [
+        "Natural Language Processing (NLP)",
+        "Generative AI",
+        "Software Development",
+        "Computer Vision",
+      ],
+      github:
+        "https://docs.google.com/document/d/1ezYkO2tcCpq0pj3hMai1zKku-me95obQ/edit?usp=sharing&ouid=115244006927528207392&rtpof=true&sd=true",
       live: "https://drive.google.com/file/d/1gXoQwmTUH5zt8rgctBBx_PkIVvLh-0G-/view?usp=sharing",
       featured: true,
     },
@@ -17,10 +29,15 @@ const Projects = () => {
       title: "Garbage ClassificationSystem ",
       description:
         "This project applies deep learning models such as EfficientNet-B0, ResNet-50, and ViT-B16 to automate garbage classification using the TrashNet dataset.It aims to enhance accuracy and scalability for integrating automated waste sorting into smart cities.By improving waste categorization, the project supports sustainable waste management and environmental conservation.",
-      image:
-        "/Images/Garbage-Classification-system.png",
-      tech: ["Deep Learning", "Computer Vision", "Scalable System Design","Software Development"],
-      github: "https://drive.google.com/file/d/1qwp385yXr8OEC6-eomDq_S_xq5y4bSRS/view?usp=sharing",
+      image: garbagecollection,
+      tech: [
+        "Deep Learning",
+        "Computer Vision",
+        "Scalable System Design",
+        "Software Development",
+      ],
+      github:
+        "https://drive.google.com/file/d/1qwp385yXr8OEC6-eomDq_S_xq5y4bSRS/view?usp=sharing",
       live: "https://drive.google.com/file/d/1qwp385yXr8OEC6-eomDq_S_xq5y4bSRS/view?usp=sharing",
       featured: true,
     },
@@ -28,10 +45,10 @@ const Projects = () => {
       title: "Vulnerability extraction and visualization tool",
       description:
         "The Vulnerability Monitoring Application automatically extracts and displays website security flaws using APIs like the MITRE CVE database.It provides an intuitive interface via Gradio, making vulnerability data accessible to both technical and non-technical users.The tool helps organizations and individuals monitor, assess, and address security issues efficiently, reducing the risk of breaches.",
-      image:
-        "/Images/Vulnerability-extraction-and-visualizationtool.png",
-      tech: ["Python", "Gradio", "MITRE CVE API","Html, CSS and JavaScript"],
-      github: "https://drive.google.com/file/d/1owntWWhovpdWbgTuMlWqkhjwzm85_U8D/view?usp=sharing",
+      image: vulnarability,
+      tech: ["Python", "Gradio", "MITRE CVE API", "Html, CSS and JavaScript"],
+      github:
+        "https://drive.google.com/file/d/1owntWWhovpdWbgTuMlWqkhjwzm85_U8D/view?usp=sharing",
       live: "https://drive.google.com/file/d/1owntWWhovpdWbgTuMlWqkhjwzm85_U8D/view?usp=sharing",
       featured: false,
     },
@@ -39,10 +56,10 @@ const Projects = () => {
       title: "Secure Boot Implementation",
       description:
         "This project implements Secure Boot on the NXP S32K3xx microcontroller, using AES/RSA/ECC cryptography to ensure only trusted firmware executes. It provides a hardware-assisted trusted computing base for secure automotive, industrial, and IoT systems.",
-      image:
-        "/Images/Secure-computer-booting.png",
-      tech: ["C", "C++", "AUTOSAR CSM","Micro Debugger"],
-      github: "https://drive.google.com/file/d/1UKJqjwqwju2j6AVq3ACBWSoDY0tI39Dw/view?usp=sharing",
+      image: securebooting,
+      tech: ["C", "C++", "AUTOSAR CSM", "Micro Debugger"],
+      github:
+        "https://drive.google.com/file/d/1UKJqjwqwju2j6AVq3ACBWSoDY0tI39Dw/view?usp=sharing",
       live: "https://drive.google.com/file/d/1UKJqjwqwju2j6AVq3ACBWSoDY0tI39Dw/view?usp=sharing",
       featured: false,
     },
@@ -50,10 +67,10 @@ const Projects = () => {
       title: "Travel Management System",
       description:
         "The Travel Management System is a console-based platform to manage customer data, cab bookings, hotel reservations, and billing services.It simulates backend functionalities of a travel agency using Object-Oriented Programming principles like Encapsulation, Abstraction, Inheritance, and Polymorphism.The system ensures modularity, scalability, and maintainability for efficient travel management operations.",
-      image:
-        "/Images/Travel-management-app.png",
-      tech: ["Java", "C++", "C#","SQL"],
-      github: "https://docs.google.com/presentation/d/1QoSYW6cF8rgj17ceIa0TRl34z8OUdEx7/edit?slide=id.p1#slide=id.p1",
+      image: travelmanagement,
+      tech: ["Java", "C++", "C#", "SQL"],
+      github:
+        "https://docs.google.com/presentation/d/1QoSYW6cF8rgj17ceIa0TRl34z8OUdEx7/edit?slide=id.p1#slide=id.p1",
       live: "https://docs.google.com/presentation/d/1QoSYW6cF8rgj17ceIa0TRl34z8OUdEx7/edit?slide=id.p1#slide=id.p1",
       featured: true,
     },
