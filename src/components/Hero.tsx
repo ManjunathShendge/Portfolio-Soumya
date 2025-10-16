@@ -107,24 +107,44 @@ const Hero = () => {
           ))}
         </motion.div>
 
-        {/* CTA Button */}
-        <motion.button
-          className="px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25"
+        {/* CTA Buttons Container */}
+        <motion.div
+          className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 1.4 }}
-          whileHover={{
-            scale: 1.05,
-            boxShadow: "0 20px 40px rgba(168, 85, 247, 0.3)",
-          }}
-          whileTap={{ scale: 0.95 }}
-          onClick={() => {
-            const section = document.getElementById("featured-projects"); // replace with your target section ID
-            section?.scrollIntoView({ behavior: "smooth" });
-          }}
         >
-          View My Work
-        </motion.button>
+          {/* View My Work Button */}
+          <motion.button
+            className="px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25"
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 20px 40px rgba(168, 85, 247, 0.3)",
+            }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => {
+              const section = document.getElementById("featured-projects");
+              section?.scrollIntoView({ behavior: "smooth" });
+            }}
+          >
+            View My Work
+          </motion.button>
+
+          {/* Download Resume Button */}
+          <motion.a
+            href="https://drive.google.com/file/d/your_resume_id/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-8 py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-full font-semibold hover:from-purple-600 hover:to-pink-600 transition-all duration-300 hover:shadow-lg hover:shadow-purple-500/25"
+            whileHover={{
+              scale: 1.05,
+              boxShadow: "0 20px 40px rgba(168, 85, 247, 0.3)",
+            }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Download Resume
+          </motion.a>
+        </motion.div>
       </motion.div>
 
       {/* Scroll Indicator */}
